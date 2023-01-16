@@ -1,0 +1,345 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Poppins:wght@300;400;500;600;700;800&family=Roboto:wght@100;300;500;700;900&display=swap');
+:root{
+    --yellow:#f9ca24;
+}
+*{
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border: none;
+
+    transition: all 0.2s linear;
+}
+/*وقت بدي حدد على شي*/
+*::selection{
+    background: var(--yellow);
+    color: #333;
+}
+/*Html section*/
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+html::-webkit-scrollbar{
+    width: 1.4rem;
+}
+html::-webkit-scrollbar-track{
+   background: #222;
+}
+html::-webkit-scrollbar-thumb{
+    background: var(--yellow);
+ }
+ /*Body Section*/
+ body{
+    background:#eee;
+    overflow-x: hidden;
+    padding-left: 35rem;
+ }
+ section{
+    min-height: 100vh;
+    padding: 1rem;
+ }
+ /*Buttom*/
+ .btn{
+    border: 2px solid;
+    padding: 0.7rem 3rem;
+    background: rgb(39, 37, 37);
+    color: #fff;
+    cursor: pointer;
+    margin-top: 1rem;
+    font-size: 2rem;
+    border-radius: 5rem;
+ }
+ .btn i{
+    padding: 0 0.5rem;
+    font-size: 1.8rem;
+ }
+ .btn:hover{
+    color: green;
+  
+ }
+ /*Heading Sec*/
+ .heading{
+    text-align: center;
+    margin: 0 6rem;
+    font-size: 4rem;
+    padding: 1rem;
+    border-top: 0.7rem solid black;;
+    border-bottom: 0.7rem solid black;
+    color: black;
+ }
+ .heading span{
+    color: black;
+ }
+ /*Header Section*/
+ header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    height: 100%;
+    width: 35rem;
+    background:rgb(178, 202, 13);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    text-align: center;
+ }
+ header .user img{
+    height: 17rem;
+    width: 25rem;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+   
+ }
+ header .user .name{
+    font-size: 3rem;
+    color: black;
+ }
+ header .user .post{
+    font-size: 1.5rem;
+    color: #eee;
+ }
+ header .navbar{
+    width: 100%;
+ }
+ header .navbar ul{
+    list-style: none;
+    padding: 1rem 3rem;
+
+ }
+ header .navbar ul li a{
+   display: block;
+   padding: 1rem;
+   margin: 1.5rem;
+   background: green;
+   color: #fff;
+   font-size: 2rem;
+   border-radius: 5rem;
+   border: 2px solid;
+ }
+ header .navbar  li a:hover{
+    color: green;
+    background: none;
+ }
+ #menu{
+    position: fixed;
+    top: 2rem;
+    right: 2rem;
+    background:#333;
+    color: #fff;
+    cursor: pointer;
+    font-size: 2.5rem;
+    padding: 1rem 1.5rem;
+    z-index: 1000;
+    display: none;
+ }
+/*Home sec*/
+.home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    padding: 0 15rem;
+}
+.home h3{
+    font-size: 3.5rem;
+    color: black;
+}
+.home .text-1{
+    margin-top: 3rem;
+    font-size: 4rem;
+    color: black;
+
+}
+.home .text-3{
+    font-size: 4rem;
+    margin-top: 4rem;
+    color: black;
+    font-family:'Times New Roman', Times, serif;
+}
+.home .text-2 .typing-1{
+    font-size: 6rem;
+    color: rgb(178, 202, 13);
+    font-weight: bold;
+}
+.home p{
+    font-size: 2rem;
+    color: black;
+    padding: 1rem 0;
+}
+.home .text-1 span{
+   color: var(--yellow);
+}
+/*About Sec*/
+.about .row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 1rem 0;
+}
+.about .row .cont{
+  text-align: left;
+  font-size: 2rem;
+  margin-left: 2rem;
+  color: black;
+}
+.about .row .cont h2{
+    text-align: center;
+    font-size: 45px;
+    margin-top: 2.5rem;
+    color: #f9ca24;
+}
+.about .row .cont p{
+    margin-top: 5rem;
+    margin-left: 2rem;
+    color: black;
+    text-align: left;
+    font-size: 30px;
+}
+.about .row .bac{
+    margin-top: 10rem;
+} 
+/*Product sec*/
+.Product .container {
+    font-size: 30px;
+    color:black;
+    margin-top: 5rem;
+    margin-left: 3rem;
+}
+
+/*Benfits Sec*/
+
+.Benfits .low .contt p{
+    margin-top: 2rem;
+    margin-left: 2rem;
+    color: black;
+    text-align: left;
+    font-size: 30px;
+}
+
+/*csoon*/
+.soon{
+    margin-top: 35rem;
+}
+.soon p{
+    margin-top: 35rem;
+    margin-left: 5rem;
+    text-align: center;
+    font-size: 30px;
+    color: black;
+    padding: 1rem 0;
+}
+.soon .box-container .box img{
+    margin-top: 3rem;
+    margin-left: rem;
+    height:39%;
+    width: 50%;
+    object-fit: cover;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.soon .box-container .box:hover img{
+    transform: scale(0.5);
+}
+/*Contact*/
+.contact .row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.contact .row .content{
+    flex:1 1 30rem;
+    padding:4rem;
+    padding-bottom: 0;
+}
+
+.contact .row .content .title{
+    margin-top: 15rem;
+    text-transform: uppercase;
+    color:black;
+    font-size: 3rem;
+    padding-bottom: 6rem;
+}
+
+.contact .row .content .info h3{
+    display: flex;
+    align-items: center;
+    font-size: 5rem;
+    color:black;
+    padding: 2rem 0;
+    font-weight: bold;
+    padding-bottom: 2rem;
+    margin-top: 10rem;
+    text-align: center;
+}
+
+.contact .row .content .info h3 i{
+    padding-right: 2rem;
+    color:var(--yellow);
+}
+
+/*Bottom To UP*/
+.top{
+    position: fixed;
+    bottom:7.5rem; right: 2rem;
+    z-index: 100;
+    display: none;
+}
+/*End CSS Code*/
+ /*media zoom*/
+ @media (max-width:1200px){
+    html{
+        font-size: 55%;
+    }
+    .home{
+        padding:1rem 4rem;
+    }
+}
+ @media (max-width:991px){
+    header{
+        left:-120%;
+    }
+    #menu{
+        display: block;
+    }
+    header.toggle{
+     left:0%;
+    }
+    body{
+        padding:0;
+    }
+ }
+ @media (max-width:768px){
+    html{
+        font-size: 50%;
+    }
+ }
+@media (max-width:400px){
+    header{
+        width: 100vw;
+    }
+    .heading{
+        margin:0 3rem;
+    }
+    .about .row .counter .box{
+        width: 100%;
+    }
+    .education .box-container .box{
+        width:100%;
+    }
+    .portfolio .box-container .box{
+        width:100%;
+    }
+    .contact .row form{
+        margin:3rem 0;
+    }
+ }
